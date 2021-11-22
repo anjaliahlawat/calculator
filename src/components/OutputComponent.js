@@ -2,8 +2,8 @@ import React from 'react';
 
 function OutputComponent(props) {
   return (
-    <div>
-      
+    <div className="row p-2">
+      <p>Output</p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function CalculatorComponent(props) {
   const allowedOps = ["+", "-", "*", "/"];
 
   const [outputVal, setOutputVal] = useState();
-  const [expression, setExpression] = useState(new Set());
+  const [expression, setExpression] = useState([]);
 
   const storeExpression = (val) => {
     // checking if val is "=", then we will parse the expr and return output
@@ -20,28 +20,32 @@ function CalculatorComponent(props) {
       setExpression(new Set());
     }
     else {
-      const set = expression;
-      set.add(val);
-      setExpression(set);
+      const expr = [...expression];
+      expr.push(val);
+      setExpression(expr);
     }
     parseOutput()
   }
 
   const parseExpr = () => {
-    const expr = expression; 
-    expr.forEach (function(value) {
-      
-    })
+    const expr = [...expression]; 
+    // expr.forEach (function(value) {
+    //   if(val)
+    // })
   }
 
   const parseOutput = () => {
-    
+
   }
 
   return (
-    <div className="calculator-comp">
-      <OutputComponent value={outputVal} />
-      <NumericKeypadComponent onKeyPress={(e) => storeExpression(e.target.value)} />
+    <div className="container-fluid calculator-comp">
+      <div className="row row1">
+        <OutputComponent value={outputVal} />
+      </div>
+      <div className="row row2 mt-3">
+        <NumericKeypadComponent onKeyPress={(e) => storeExpression(e.target.value)} />
+      </div> 
     </div>
   );
 }

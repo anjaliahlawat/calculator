@@ -1,4 +1,4 @@
-import './sass/App.scss';
+import './scss/App.scss';
 import CalculatorScreen from './screen/CalculatorScreen';
 
 function App() {

@@ -1,0 +1,13 @@
+.calculator-comp {
+   width: 330px;
+   height: 550px;
+   position: absolute;
+   top: 15%;
+   left: 36%;
+
+   .row1, .row2 {
+     background: $screen-background;
+     border-radius: 5px;
+     padding: 10px 15px;
+   }
+}

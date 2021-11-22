@@ -1,0 +1,30 @@
+.button-div {
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+.key-buttons {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  background: $orange-key-background;
+  box-shadow: 1px 1px 1px $orange-key-shadow;
+  border:none;
+  color: $text-color;
+  font-weight: 700;
+  font-size: 18px;
+
+  &.del, &.equal {
+    background: $key-background;
+    box-shadow: 1px 1px 1px $key-shadow;
+    color: white;
+    font-weight: 600;
+  }
+
+  &.equal {
+    background: $red-key-background;
+    box-shadow: 1px 1px 1px $red-key-shadow;
+    color: white;
+    font-weight: 600;
+  }
+}
