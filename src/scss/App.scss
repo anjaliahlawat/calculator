@@ -1,4 +1,9 @@
 @import "./config";
 @import "./components/calculatorComp";
 @import "./components/buttonComp";
+@import "./components/outputComp";
 @import "./screen/calculator";
+
+body {
+  overflow: hidden;
+}

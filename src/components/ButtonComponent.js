@@ -10,7 +10,7 @@ function ButtonComponent({keyName, onKeyPress}) {
       return "equal";
   }
   return (
-    <button className={`key-buttons ${setKeyClassName(keyName)}`} onClick={onKeyPress}>
+    <button className={`key-buttons ${setKeyClassName(keyName)}`} onClick={()=>onKeyPress(keyName)}>
       {keyName}
     </button>
   );

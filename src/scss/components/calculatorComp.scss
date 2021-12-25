@@ -5,9 +5,30 @@
    top: 15%;
    left: 36%;
 
+   .header {
+     p{
+        font-weight: 600;
+        color: white;
+        width: 20%;
+     }
+
+     .error {
+      text-align: center;
+       width: 80%;
+     }
+   }
+
    .row1, .row2 {
-     background: $screen-background;
      border-radius: 5px;
+
+   }
+   .row1 {
+    background: $screen-background;
+    padding: 3px 8px;
+    min-height: 62px;
+  }
+    .row2 {
+      background: $keypad-background;
      padding: 10px 15px;
    }
 }

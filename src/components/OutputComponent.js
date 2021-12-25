@@ -1,9 +1,9 @@
 import React from 'react';
 
-function OutputComponent(props) {
+function OutputComponent({expr}) {
   return (
-    <div className="row p-2">
-      <p>Output</p>
+    <div className="col-lg-12 p-2 output">
+      <p>{expr}</p>
     </div>
   );
 }
